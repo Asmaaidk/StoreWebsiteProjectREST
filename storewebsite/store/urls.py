@@ -3,10 +3,10 @@ from .views import *
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register('pruducts', ProductsViewSet, basename='pruducts')
-router.register('customers', CustomersViewSet, basename='customers')
-router.register('reviews', ReviewsViewSet, basename='reviews')
-router.register('orders', OrdersViewSet, basename='orders')
+router.register('pruduct', ProductsViewSet, basename='pruduct')
+router.register('customer', CustomersViewSet, basename='customer')
+router.register('review', ReviewsViewSet, basename='review')
+router.register('order', OrdersViewSet, basename='order')
 
 
 urlpatterns = [
