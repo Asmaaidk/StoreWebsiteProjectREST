@@ -12,6 +12,9 @@ router.register('order', OrdersViewSet, basename='order')
 urlpatterns = [
   path('viewset/', include(router.urls)),
   path('viewset/<int:pk>/', include(router.urls)),
+  path('register/', register_user, name='register'),
+  path('login/', user_login, name='login'),
+  path('logout/', user_logout, name='logout'),
 ]
 
 
